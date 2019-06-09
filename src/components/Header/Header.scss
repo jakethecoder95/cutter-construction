@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+
+header {
+  background-color: #333;
+  padding-bottom: 1rem;
+}
+
+.navbar {
+  .nav-brand {
+    margin-right: 20px;
+    font-size: 1.35rem;
+    color: #f7d57f;
+  }
+  .brand-0 {
+    font-family: "Righteous";
+  }
+  .brand-1 {
+    font-family: "Dancing Script";
+  }
+  .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    margin: auto 20px;
+  }
+  .active {
+    color: #f7d57f;
+  }
+}
+
+.call-action {
+  background: #f7d57f;
+  font-size: 0.92rem;
+  height: 2.5rem;
+  padding: 0.5rem 40px;
+  font-weight: bold;
+
+  a {
+    color: #000000ca;
+  }
+}
+
+@media (min-width: 990px) {
+  header {
+    display: flex;
+    background-color: #00000000;
+  }
+  .call-action {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .container {
+    max-width: 100%;
+  }
+  .nav-link {
+    margin: auto 10px !important;
+  }
+}
