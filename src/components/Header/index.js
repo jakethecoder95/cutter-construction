@@ -7,8 +7,7 @@ const Header = props => {
     <header className="header container masthead mb-auto">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <Link className="nav-brand" to="#">
-          <span className="brand-0">CUTTER</span>{" "}
-          <span className="brand-1">Construction</span>
+          <b>Cutter Construction</b>
         </Link>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -48,7 +47,7 @@ const Header = props => {
         </button>
       </nav>
       <div className="call-action">
-        <a href="tel:5302681602">CALL US: 530-268-1602</a>
+        <a href="tel:5304011493">CALL US: 530-401-1493</a>
       </div>
     </header>
   );
