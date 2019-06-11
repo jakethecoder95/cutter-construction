@@ -14,10 +14,13 @@ header {
     font-weight: bold;
     margin: auto 20px;
   }
-  .active {
-    color: #f7d57f;
+  .active > .nav-link {
+    color: #f7d57f !important;
   }
 }
+// .navbar-dark .navbar-nav .active > .nav-link {
+//   color: #f7d57f;
+// }
 
 .call-action {
   background: #f7d57f;
