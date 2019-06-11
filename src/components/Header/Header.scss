@@ -4,6 +4,13 @@ header {
 }
 
 .navbar {
+  margin-bottom: 8px;
+
+  .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 8px;
+  }
   .nav-brand {
     margin-right: 20px;
     font-size: 1.35rem;
@@ -18,9 +25,6 @@ header {
     color: #f7d57f !important;
   }
 }
-// .navbar-dark .navbar-nav .active > .nav-link {
-//   color: #f7d57f;
-// }
 
 .call-action {
   background: #f7d57f;

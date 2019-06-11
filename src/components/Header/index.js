@@ -11,6 +11,7 @@ const Header = props => {
     <header className="header container masthead mb-auto">
       <nav className="navbar navbar-expand-lg navbar-dark">
         <Link
+          to="/"
           className={`nav-brand ${path === "/" ? "active" : ""}`}
           onClick={() => setPath("/")}
         >
