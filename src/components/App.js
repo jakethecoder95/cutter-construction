@@ -3,15 +3,12 @@ import React from "react";
 import { Router, Switch, Route } from "react-router-dom";
 
 import CoverPage from "./CoverPage";
-import Header from "./Header";
-import Footer from "./Footer";
 import About from "./Pages/About";
 import history from "../history";
 
 const App = props => {
   return (
     <Router history={history}>
-      <Header />
       <Switch>
         <Route exact path="/" component={CoverPage} />
         <Route exact path="/about" component={About} />
@@ -24,7 +21,6 @@ const App = props => {
           </h1>
         </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 };

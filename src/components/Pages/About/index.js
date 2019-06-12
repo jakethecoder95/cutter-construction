@@ -2,6 +2,9 @@ import "./About.scss";
 import React, { Fragment } from "react";
 
 import Banner from "../../Banner";
+import Header from "../../Header";
+import Footer from "../../Footer";
+import PageContent from "./PageContent";
 
 const imageCSS = {
   background:
@@ -11,45 +14,12 @@ const imageCSS = {
 const About = props => {
   return (
     <Fragment>
+      <Header />
       <Banner title="About Us" imageCSS={imageCSS} />
       <div className="about__page-content">
-        <div className="container">
-          <div className="grid">
-            <div className="row">
-              <div className="about__item col-md-3">
-                <h3>EXCELLENCE AND PROFESSIONALISM</h3>
-                <p>
-                  Here is an example paragraph expanding on the header. You can
-                  decide whatever you want to say here. For example, "To us,
-                  building is not just a job it is who we are and we cannot
-                  imagine doing anything else". For consistency please try to
-                  make it as long as this :)
-                </p>
-              </div>
-              <div className="about__item col-md-3 col-md-offset-3">
-                <h3>EXAMPLE NUMBER TWO</h3>
-                <p>
-                  Here is an example paragraph expanding on the header. You can
-                  decide whatever you want to say here. For example, "To us,
-                  building is not just a job it is who we are and we cannot
-                  imagine doing anything else". For consistency please try to
-                  make it as long as this :)
-                </p>
-              </div>
-              <div className="about__item col-md-3">
-                <h3>EXAMPLE NUMBER THREE</h3>
-                <p>
-                  Here is an example paragraph expanding on the header. You can
-                  decide whatever you want to say here. For example, "To us,
-                  building is not just a job it is who we are and we cannot
-                  imagine doing anything else". For consistency please try to
-                  make it as long as this :)
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <PageContent />
       </div>
+      <Footer />
     </Fragment>
   );
 };

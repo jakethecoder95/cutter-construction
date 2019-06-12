@@ -1,53 +1,37 @@
 import "./Header.scss";
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import history from "../../history";
 
 const Header = props => {
-  const [path, setPath] = useState(history.location.pathname);
+  const path = history.location.pathname;
 
   return (
     <header className="header container masthead mb-auto">
       <nav className="navbar navbar-expand-lg navbar-dark">
-        <Link
-          to="/"
-          className={`nav-brand ${path === "/" ? "active" : ""}`}
-          onClick={() => setPath("/")}
-        >
+        <Link to="/" className={`nav-brand ${path === "/" ? "active" : ""}`}>
           <b>Cutter Construction</b>
         </Link>
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
-            <li
-              className={`nav-item ${path === "/about" ? "active" : ""}`}
-              onClick={() => setPath("/about")}
-            >
+            <li className={`nav-item ${path === "/about" ? "active" : ""}`}>
               <Link className="nav-link" to="/about">
                 ABOUT US
               </Link>
             </li>
-            <li
-              className={`nav-item ${path === "/services" ? "active" : ""}`}
-              onClick={() => setPath("/services")}
-            >
+            <li className={`nav-item ${path === "/services" ? "active" : ""}`}>
               <Link className="nav-link" to="/services">
                 SERVICES
               </Link>
             </li>
-            <li
-              className={`nav-item ${path === "/gallery" ? "active" : ""}`}
-              onClick={() => setPath("/gallery")}
-            >
+            <li className={`nav-item ${path === "/gallery" ? "active" : ""}`}>
               <Link className="nav-link" to="/gallery">
                 GALLERY
               </Link>
             </li>
-            <li
-              className={`nav-item ${path === "/contact" ? "active" : ""}`}
-              onClick={() => setPath("/contact")}
-            >
+            <li className={`nav-item ${path === "/contact" ? "active" : ""}`}>
               <Link className="nav-link" to="/contact">
                 CONTACT
               </Link>
