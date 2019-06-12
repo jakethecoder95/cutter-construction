@@ -1,0 +1,38 @@
+.banner {
+  height: 200px;
+  background-size: cover !important;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  z-index: -1;
+  text-align: center;
+
+  .banner__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(50, 50, 50, 0.4);
+  }
+}
+
+@media (min-width: 990px) {
+  .banner {
+    margin-top: -4.99rem;
+    height: 300px;
+    text-align: left;
+    .banner__overlay {
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    .container {
+      padding-left: 2rem;
+    }
+
+    .banner__title {
+      font-size: 3.5em;
+    }
+  }
+}

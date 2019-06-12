@@ -5,6 +5,7 @@ import { Router, Switch, Route } from "react-router-dom";
 import CoverPage from "./CoverPage";
 import Header from "./Header";
 import Footer from "./Footer";
+import About from "./Pages/About";
 import history from "../history";
 
 const App = props => {
@@ -13,7 +14,7 @@ const App = props => {
       <Header />
       <Switch>
         <Route exact path="/" component={CoverPage} />
-        <Route exact path="/about" />
+        <Route exact path="/about" component={About} />
         <Route exact path="/services" />
         <Route exact path="/gallery" />
         <Route exact path="/contact" />
