@@ -1,5 +1,5 @@
 import "./About.scss";
-import React, { Fragment } from "react";
+import React from "react";
 
 import Banner from "../../Banner";
 import Header from "../../Header";
@@ -13,14 +13,14 @@ const imageCSS = {
 
 const About = props => {
   return (
-    <Fragment>
+    <div className="page">
       <Header />
       <Banner title="About Us" imageCSS={imageCSS} />
       <div className="about__page-content">
         <PageContent />
       </div>
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 

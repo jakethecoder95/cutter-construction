@@ -1,12 +1,12 @@
 import "./CoverPage.scss";
-import React, { Fragment } from "react";
+import React from "react";
 
 import Header from "../Header";
 import Footer from "../Footer";
 
 const CoverPage = props => {
   return (
-    <Fragment>
+    <div className="page">
       <Header />
       <div className="page cover-page text-center">
         <div className="cover-page__overlay">
@@ -24,7 +24,7 @@ const CoverPage = props => {
         </div>
       </div>
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 
