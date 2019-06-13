@@ -1,0 +1,27 @@
+.page-content {
+  background-color: white;
+  padding-top: 4rem;
+  text-align: center;
+  .row {
+    flex-direction: column;
+  }
+  .item {
+    max-width: 450px;
+    margin: 0 auto 4rem auto;
+  }
+
+  h3 {
+    color: #f7d57f;
+  }
+}
+
+@media (min-width: 990px) {
+  .page-content {
+    text-align: left;
+    padding: 15vh 0 22vh 0;
+
+    .row {
+      flex-direction: row;
+    }
+  }
+}

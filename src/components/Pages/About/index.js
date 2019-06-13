@@ -1,10 +1,10 @@
-import "./About.scss";
+import "../PageContent.scss";
 import React from "react";
 
 import Banner from "../../Banner";
 import Header from "../../Header";
 import Footer from "../../Footer";
-import PageContent from "./PageContent";
+import AboutContent from "./AboutContent";
 
 const imageCSS = {
   background:
@@ -16,8 +16,8 @@ const About = props => {
     <div className="page">
       <Header />
       <Banner title="About Us" imageCSS={imageCSS} />
-      <div className="about__page-content">
-        <PageContent />
+      <div className="page-content">
+        <AboutContent />
       </div>
       <Footer />
     </div>
