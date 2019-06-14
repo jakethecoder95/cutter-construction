@@ -1,8 +1,10 @@
+import "./Gallery.scss";
 import React from "react";
 
 import Header from "../../Header";
 import Footer from "../../Footer";
 import Banner from "../../Banner";
+import GalleryContent from "./GalleryContent";
 
 const imageCSS = {
   background:
@@ -15,6 +17,7 @@ const Gallery = props => {
     <div className="page">
       <Header />
       <Banner title="Gallery" imageCSS={imageCSS} />
+      <GalleryContent />
       <Footer />
     </div>
   );

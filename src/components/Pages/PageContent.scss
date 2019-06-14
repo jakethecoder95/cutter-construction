@@ -1,13 +1,26 @@
 .page-content {
   background-color: white;
-  padding-top: 4rem;
+  padding-top: 2rem;
   text-align: center;
+  .grid {
+    margin-top: 2rem;
+  }
+  .promo-header {
+    margin-bottom: 2rem;
+    font-size: 1.75em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .row {
     flex-direction: column;
   }
   .item {
     max-width: 450px;
     margin: 0 auto 4rem auto;
+  }
+  .item__image {
+    margin: 15px auto;
   }
 
   h3 {
@@ -18,7 +31,13 @@
 @media (min-width: 990px) {
   .page-content {
     text-align: left;
-    padding: 15vh 0 22vh 0;
+    padding: 10vh 0 18vh 0;
+
+    .promo-header {
+      margin-bottom: 4rem;
+      text-align: center;
+      max-width: 100%;
+    }
 
     .row {
       flex-direction: row;
