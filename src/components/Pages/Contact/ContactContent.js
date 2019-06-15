@@ -16,7 +16,7 @@ const ContactContent = props => {
             <div className="email-container col-lg-7">
               <EmailForm />
             </div>
-            <div className="col-lg-4" style={{ margin: "2rem auto" }}>
+            <div className="col-lg-4">
               <Aside />
             </div>
           </div>
