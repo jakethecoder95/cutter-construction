@@ -16,10 +16,19 @@ header {
     font-size: 1.35rem;
     color: #f7d57f;
   }
+  .nav-brand:hover {
+    text-decoration: none;
+  }
   .nav-link {
     color: #fff !important;
     font-weight: bold;
     margin: auto 20px;
+    transition: color 250ms;
+  }
+  .nav-link:hover,
+  .nav-link:active,
+  .nav-link:focus {
+    color: #f7d57f !important;
   }
   .active > .nav-link {
     color: #f7d57f !important;
