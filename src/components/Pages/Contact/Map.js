@@ -7,8 +7,8 @@ const Map = prps => {
         title="map"
         width="100%"
         height="100%"
-        frameborder="0"
-        allowfullscreen=""
+        frameBorder="0"
+        allowFullScreen=""
         scrolling="no"
         src="https://maps.google.com/maps?q=23263%20Sunset%20Ridge%20Dr%2C%20Auburn%2C%20CA%2095602&t=&z=13&ie=UTF8&iwloc=&output=embed"
       />
