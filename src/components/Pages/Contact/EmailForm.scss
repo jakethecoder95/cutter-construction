@@ -1,0 +1,28 @@
+.contact__form {
+  margin-bottom: 2rem;
+
+  input,
+  textarea {
+    background-color: #f7d57f;
+    border-radius: 0;
+  }
+
+  input:focus,
+  textarea:focus {
+    background-color: #f7d57f99;
+    border-color: #555;
+    box-shadow: none;
+  }
+
+  textarea {
+    resize: none;
+  }
+  button {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+  }
+}

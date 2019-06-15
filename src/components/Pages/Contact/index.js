@@ -1,8 +1,10 @@
+import "./Contact.scss";
 import React from "react";
 
 import Header from "../../Header";
 import Footer from "../../Footer";
 import Banner from "../../Banner";
+import ContactContent from "./ContactContent";
 
 const imageCSS = {
   background:
@@ -16,6 +18,7 @@ const Contact = props => {
     <div className="page">
       <Header />
       <Banner title="Contact" imageCSS={imageCSS} />
+      <ContactContent />
       <Footer />
     </div>
   );

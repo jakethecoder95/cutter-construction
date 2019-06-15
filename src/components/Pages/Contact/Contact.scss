@@ -1,0 +1,24 @@
+.contact__page-content {
+  padding-bottom: 2rem;
+  .grid .row {
+    justify-content: space-between;
+  }
+  .contact__aside {
+    margin-bottom: 2rem;
+  }
+
+  .contact__map {
+    height: 250px;
+  }
+}
+
+@media (min-width: 990px) {
+  .contact__page-content {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    .contact__aside:first-child {
+      margin-bottom: 5rem;
+    }
+  }
+}
