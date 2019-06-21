@@ -51,7 +51,7 @@ const Header = props => {
         </button>
       </nav>
       <div className="call-action">
-        <a href="tel:5304011493">CALL US: 530-401-1493</a>
+        <a href="tel:5304015084">CALL US: 530-401-5084</a>
       </div>
     </header>
   );
