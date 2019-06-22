@@ -8,7 +8,7 @@ const EmailForm = props => {
     try {
       const result = await axios.post(
         // "http://localhost:9000/.netlify/functions/api/cutter-construction/email", // dev
-        "http://robinson-endpoints.netlify.com/.netlify/functions/api/cutter-construction", // prod
+        "https://robinson-endpoints.netlify.com/.netlify/functions/api/cutter-construction", // prod
         { ...items }
       );
       console.log(result);
