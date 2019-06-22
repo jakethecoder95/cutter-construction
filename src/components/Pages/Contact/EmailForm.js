@@ -1,14 +1,14 @@
 import "./EmailForm.scss";
 import React from "react";
 import { Form, Field } from "react-final-form";
-
-import server from "../../../api/server";
+import axios from "axios";
 
 const EmailForm = props => {
   const onSubmit = async items => {
     try {
-      const result = await server.post(
-        "http://robinson-endpoints.netlify.com/.netlify/functions/api/cutter-construction/email",
+      const result = await axios.post(
+        // "http://localhost:9000/.netlify/functions/api/cutter-construction/email", // dev
+        "http://robinson-endpoints.netlify.com/.netlify/functions/api/cutter-construction", // prod
         { ...items }
       );
       console.log(result);
