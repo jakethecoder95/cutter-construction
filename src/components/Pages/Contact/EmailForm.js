@@ -3,12 +3,15 @@ import React from "react";
 import { Form, Field } from "react-final-form";
 import axios from "axios";
 
+import ContactField from "./ContactField";
+import isEmail from "./util/regexEmail";
+
 const EmailForm = props => {
   const onSubmit = async items => {
     try {
       const result = await axios.post(
-        "http://localhost:9000/.netlify/functions/api/cutter-construction/email", // dev
-        // "https://robinson-endpoints.netlify.com/.netlify/functions/api/cutter-construction/email", // prod
+        // "http://localhost:9000/.netlify/functions/api/cutter-construction/email", // dev
+        "https://robinson-endpoints.netlify.com/.netlify/functions/api/cutter-construction/email", // prod
         { ...items }
       );
       console.log(result);
@@ -25,9 +28,15 @@ const EmailForm = props => {
     }
     if (!values.email) {
       errors.email = "Required";
+    } else if (!isEmail(values.email)) {
+      errors.email = "Invalid email";
     }
     if (!values.phone) {
       errors.phone = "Required";
+    } else if (values.phone.length < 10) {
+      errors.phone = "Not long enough, be sure to include the area code";
+    } else if (values.phone.length > 16) {
+      errors.phone = "Invalid USA phone number";
     }
     if (!values.subject) {
       errors.subject = "Required";
@@ -39,11 +48,6 @@ const EmailForm = props => {
     return errors;
   };
 
-  const hasError = bool => {
-    console.log(bool);
-    return bool ? "form-control error" : "form-control";
-  };
-
   return (
     <Form
       onSubmit={onSubmit}
@@ -51,55 +55,21 @@ const EmailForm = props => {
       render={({ handleSubmit, pristine, invalid, errors }) => (
         <form className="contact__form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <Field
-              component="input"
-              className={hasError(errors.name)}
-              type="text"
-              name="name"
-              placeholder="Name"
-            />
+            <Field component={ContactField} name="name" />
           </div>
           <div className="form-group">
-            <Field
-              component="input"
-              className={hasError(errors.email)}
-              type="email"
-              name="email"
-              placeholder="Email"
-            />
+            <Field component={ContactField} name="email" />
           </div>
           <div className="form-group">
-            <Field
-              component="input"
-              name="phone"
-              className={hasError(errors.phone)}
-              type="text"
-              placeholder="Phone"
-            />
+            <Field component={ContactField} name="phone" />
           </div>
           <div className="form-group">
-            <Field
-              component="input"
-              name="subject"
-              className={hasError(errors.subjec)}
-              type="text"
-              placeholder="Subject"
-            />
+            <Field component={ContactField} name="subject" />
           </div>
           <div className="form-group">
-            <Field
-              component="textarea"
-              name="message"
-              className={hasError(errors.message)}
-              type="text"
-              placeholder="Message"
-              rows="6"
-              resize="none"
-            />
+            <Field component={ContactField} name="message" />
           </div>
-          <button type="submit" disabled={pristine || invalid}>
-            SEND
-          </button>
+          <button type="submit">SEND</button>
         </form>
       )}
     />
