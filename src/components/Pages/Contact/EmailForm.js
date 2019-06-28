@@ -100,7 +100,7 @@ const EmailForm = props => {
             </div>
           )}
           {emailResponse === "error" && (
-            <div className="alert alert-error" role="alert">
+            <div className="alert alert-danger" role="alert">
               Error: There was an issue there.{" "}
               <a href="mailto:cuttercon11@gmail.com">
                 Try manually emailing us.
