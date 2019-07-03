@@ -15,11 +15,9 @@ const CoverPage = props => {
               <i>Welcome to</i>
             </div>
             <div className="cover-page__title-1">Cutter Construction</div>
-            <p>
-              For a new design or replacing your old deck. We offer a
-              comprehensive solution using modern synthetic materials as well as
-              wood.
-            </p>
+            <h4 style={{ marginTop: "20px" }}>
+              <i>We specialize in DECKS, REMODELS, and MORE!</i>
+            </h4>
           </div>
         </div>
       </div>
