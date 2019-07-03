@@ -16,7 +16,7 @@ const AboutContent = props => {
             </p>
           </div>
           <div className="item col-md-3 col-md-offset-3">
-            <h3>EXAMPLE NUMBER TWO</h3>
+            <h3>PRIDE OF CRAFTMENSHIP</h3>
             <p>
               Here is an example paragraph expanding on the header. You can
               decide whatever you want to say here. For example, "To us,
