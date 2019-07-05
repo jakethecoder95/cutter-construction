@@ -7,8 +7,8 @@ const Aside = props => {
         <h3>GET IN TOUCH!</h3>
         <div>530-401-5084</div>
         <div>cuttercon11@gmail.com</div>
-        <div>23263 Sunset Ridge Dr</div>
-        <div>Auburn, CA 95602</div>
+        <div>10042 Wolf Rd. Suite B</div>
+        <div>Grass Valley, CA 95949</div>
       </div>
       <div className="contact__aside">
         <h3>GET YOUR FREE QUOTE!</h3>

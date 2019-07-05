@@ -10,7 +10,7 @@ const Map = prps => {
         frameBorder="0"
         allowFullScreen=""
         scrolling="no"
-        src="https://maps.google.com/maps?q=23263%20Sunset%20Ridge%20Dr%2C%20Auburn%2C%20CA%2095602&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        src="https://maps.google.com/maps?q=10042%20wolf%20rd%20suite%20b&t=&z=13&ie=UTF8&iwloc=&output=embed"
       />
     </div>
   );
