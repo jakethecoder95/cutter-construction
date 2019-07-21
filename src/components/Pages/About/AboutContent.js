@@ -9,7 +9,7 @@ const AboutContent = props => {
             <h3>EXCELLENCE AND PROFESSIONALISM</h3>
             <p>
               Cutter Construction has been building relationships and trust with
-              our customers since 2011 in Lake of the Pines, Grass Valley, and
+              our customers since 2006 in Lake of the Pines, Grass Valley, and
               Auburn.We are an active remodeling and deck building business and
               believe that no project is too big or small for our team.
             </p>
