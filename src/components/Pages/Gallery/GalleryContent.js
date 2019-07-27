@@ -2,65 +2,66 @@ import React, { useState } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
+import bathBeforeAfter from "../../../images/bath-before-after.jpg";
+import deckWithScafolding from "../../../images/deck-w-scafolding.jpg";
+import deckFinished from "../../../images/deck-finished.jpg";
+import deckFinished2 from "../../../images/deck-finished-2.jpg";
+import firePlace from "../../../images/fire-place.jpg";
+import shower from "../../../images/shower.jpg";
+import shower2 from "../../../images/shower2.jpg";
+import sink from "../../../images/sink.jpg";
+import rockWall from "../../../images/rock-wall.JPG";
+import rockWall2 from "../../../images/rock-wall-2.JPG";
+
 const photos = [
   {
     height: 4,
-    src:
-      "https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 5
+    src: deckFinished,
+    width: 7
   },
   {
-    height: 4,
-    src:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 6
-  },
-  {
-    height: 3,
-    src:
-      "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 5
-  },
-  {
-    height: 4,
-    src:
-      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 4
-  },
-  {
-    height: 7,
-    src:
-      "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 6
-  },
-  {
-    height: 4,
-    src:
-      "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 6
-  },
-  {
-    height: 4,
-    src:
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 6
+    height: 5,
+    src: firePlace,
+    width: 3
   },
   {
     height: 3,
-    src:
-      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
-    width: 5
+    src: deckFinished2,
+    width: 6
   },
   {
     height: 6,
-    src:
-      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
+    src: bathBeforeAfter,
+    width: 6
+  },
+  {
+    height: 7,
+    src: shower,
+    width: 5
+  },
+  {
+    height: 3,
+    src: sink,
+    width: 6
+  },
+  {
+    height: 4,
+    src: rockWall,
     width: 4
   },
   {
     height: 3,
-    src:
-      "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjU0MzM0fQ",
+    src: deckWithScafolding,
+    width: 6
+  },
+  {
+    height: 4,
+    src: rockWall2,
+    width: 5
+  },
+  {
+    height: 7,
+    src: shower2,
     width: 4
   }
 ];
