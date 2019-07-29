@@ -17,6 +17,8 @@ const CoverPage = props => {
             <div className="cover-page__title-1">Cutter Construction</div>
             <h4 style={{ marginTop: "20px" }}>
               <i>We specialize in DECKS, REMODELS, and MORE!</i>
+              <br />
+              License #884996
             </h4>
           </div>
         </div>
