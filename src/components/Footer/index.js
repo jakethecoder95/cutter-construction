@@ -14,6 +14,8 @@ const Footer = props => {
           JR Development
         </a>
       </small>
+
+      <small>License #884996</small>
     </footer>
   );
 };
